@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Frontend Mentor | Hotel booking confirmation page</title>
+<link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="dashboard">
+
+   
+        <aside class="sidebar">
+
+            <div class="logo">
+                <span class="sun">☀</span>
+                <div>
+                    <h2>Maison</h2>
+                    <h2 class="logo-second">Soleil</h2>
+                </div>
+            </div>
+
+            <nav class="navigation">
+                <a href="#" class="active">▣ ; Your stay <span>1</span></a>
+                <a href="#">⌂ The house</a>
+                <a href="#">◎ Around town</a>
+                <a href="#">♧  Breakfast</a>
+                <a href="#">✉ Messages</a>
+            </nav>
+
+            <div class="sidebar-bottom">
+
+                <div class="weather">
+                    <p>TODAY IN CASSIS</p>
+                    <h2>27° ☀</h2>
+                    <small>Sunny · light breeze</small>
+                </div>
+
+                <div class="address">
+                    <p>EST. 1987</p>
+                    <p>MAISON SOLEIL · 12 RUE DES OLIVIERS · CASSIS</p>
+                    <p>© 2026 MAISON SOLEIL</p>
+                </div>
+
+            </div>
+
+        </aside>
+
+        <main class="main-content">
+
+            <header class="topbar">
+
+                <div>
+                    <p class="eyebrow">BOOKING · CONFIRMED</p>
+                    <h1>Bienvenue, <em>Lucia.</em></h1>
+                </div>
+
+                <div class="header-buttons">
+                    <button class="print-button"
+                      >
+                        Print receipt
+                    </button>
+
+                    <button class="calendar-button">
+                        Add to calendar
+                    </button>
+                </div>
+
+            </header>
+
+        
+            <section class="booking-display">
+
+                <article class="receipt">
+
+                    <div class="receipt-top">
+                        <div>
+                            <p class="eyebrow">RECEIPT</p>
+                            <h2>Your stay</h2>
+                        </div>
+
+                        <small>№ MS-2026<br>0421-AH</small>
+                    </div>
+
+                    <div class="dates">
+
+                        <div>
+                            <p>CHECK IN</p>
+                            <h2>25 Apr</h2>
+                            <small>Saturday · 15:00</small>
+                        </div>
+
+                        <div>
+                            <p>CHECK OUT</p>
+                            <h2>29 Apr</h2>
+                            <small>Wednesday · 11:00</small>
+                        </div>
+
+                    </div>
+
+                    <div class="receipt-items">
+                        <p><span>Room · La Garrigue × 4 nights</span>
+                            <span>€ 620.00</span></p>
+
+                        <p><span>Breakfast × 2 guests</span>
+                            <span>€ 96.00</span></p>
+
+                        <p><span>Tourist tax</span>
+                            <span>€ 14.40</span></p>
+                    </div>
+
+                    <div class="total">
+                        <span>TOTAL PAID</span>
+                        <strong>€ 730.40</strong>
+                    </div>
+
+                    <p class="receipt-footer">
+                        PAID · WISE · GBP
+                    </p>
+
+                </article>
+
+                <article class="welcome-card">
+
+                    <div class="welcome-top">
+                        <span>WELCOME CARD</span>
+                        <span class="card-sun">☼</span>
+                    </div>
+
+                    <div class="welcome-message">
+                        <p><em>A note from your host,</em></p>
+                        <h2>Margaux.</h2>
+
+                        <p>
+                            We're so glad you're coming.
+                            The shutters will be open, the lemonade cold,
+                            and the cat – Poivre – pretending not to notice you.
+                        </p>
+                    </div>
+
+                    <div class="room-name">
+                        <small>ROOM</small>
+                        <h3>La Garrigue</h3>
+                    </div>
+
+                </article>
+
+            </section>
+
+            <p class="hover-hint">✦ HOVER TO EXPLORE ✦</p>
+
+            <!-- INFORMATION CARDS -->
+            <section class="info-grid">
+
+                <article class="info-card">
+
+                    <div class="card-heading">
+                        <span class="icon arrival-icon">♆</span>
+                        <span class="category">ARRIVAL</span>
+                        <span class="number">01</span>
+                    </div>
+
+                    <h2>Check-in from 15:00</h2>
+                    <p class="subheading">Sat, 25 April</p>
+
+                    <p class="description">
+                        Ring the brass bell by the blue door.
+                        If we're at the market, the key is in the
+                        terracotta pot by the olive tree.
+                    </p>
+
+                </article>
+
+                <article class="info-card">
+
+                    <div class="card-heading">
+                        <span class="icon wifi-icon">◉</span>
+                        <span class="category">WIFI</span>
+                        <span class="number">02</span>
+                    </div>
+
+                    <h2>Le Soleil · Guest</h2>
+                    <p class="subheading">Password below</p>
+
+                    <div class="wifi-row">
+                        <span>NETWORK</span>
+                        <span>Le Soleil · Guest</span>
+                    </div>
+
+                    <div class="wifi-row">
+                        <span>PASSWORD</span>
+                        <span>
+                            soleil-2026
+                            <button class="copy-button"
+                               >
+                            </button>
+                        </span>
+                    </div>
+
+                </article>
+
+                <article class="info-card">
+
+                    <div class="card-heading">
+                        <span class="icon breakfast-icon">♨</span>
+                        <span class="category">BREAKFAST</span>
+                        <span class="number">03</span>
+                    </div>
+
+                    <h2>Served 8 – 10:30</h2>
+                    <p class="subheading">On the terrace</p>
+
+                    <p class="description">
+                        Fresh figs, Marseille honey, pain au levain,
+                        and espresso. Gluten-free option?
+                        Leave a note the night before.
+                    </p>
+
+                </article>
+
+            </section>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
+
+
+  

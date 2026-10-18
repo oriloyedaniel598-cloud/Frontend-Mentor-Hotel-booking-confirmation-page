@@ -1,0 +1,449 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #faf6ef;
+    color: #302820;
+}
+
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+
+.sidebar {
+    width: 260px;
+    padding: 20px 15px;
+    border-right: 1px solid #e5ddd2;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5ddd2;
+}
+
+.sun {
+    font-size: 35px;
+    color: #d9a34d;
+}
+
+.logo h2 {
+    margin: 0;
+    color: #a84b30;
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-style: italic;
+}
+
+.logo .logo-second {
+    color: #302820;
+    font-style: normal;
+    font-size: 18px;
+}
+
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 20px;
+}
+
+.navigation a {
+    padding: 13px 10px;
+    text-decoration: none;
+    color: #51483f;
+    border-radius: 8px;
+}
+
+.navigation a:hover,
+.navigation .active {
+    background-color: white;
+}
+
+.navigation a span {
+    float: right;
+    background-color: #ad4327;
+    color: white;
+    padding: 3px 7px;
+    border-radius: 50%;
+    font-size: 10px;
+}
+
+.sidebar-bottom {
+    margin-top: auto;
+}
+
+.weather {
+    background-color: #f5d77d;
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.weather p {
+    font-size: 11px;
+}
+
+.weather h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    margin: 10px 0;
+}
+
+.weather small {
+    color: #63563c;
+}
+
+.address {
+    border-top: 1px dashed #dfd6c9;
+    padding-top: 15px;
+    color: #82786c;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+
+.main-content {
+    flex: 1;
+    padding: 30px 40px;
+    min-width: 0;
+}
+
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.eyebrow {
+    color: #83776a;
+    font-size: 11px;
+    letter-spacing: 2px;
+}
+
+.topbar h1 {
+    font-family: Georgia, serif;
+    font-size: 40px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.topbar h1 em {
+    color: #a94830;
+}
+
+.header-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.header-buttons button {
+    padding: 12px 16px;
+    border-radius: 25px;
+    border: 1px solid #e5ddd2;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.header-buttons .calendar-button {
+    background-color: #302820;
+    color: white;
+}
+
+
+.booking-display {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 55px auto 20px;
+    max-width: 850px;
+}
+
+
+.receipt {
+    background-color: #fffefa;
+    width: 50%;
+    padding: 25px;
+    border: 1px solid #e5ddd2;
+    border-radius: 15px;
+}
+
+.receipt-top {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px dashed #e5ddd2;
+    padding-bottom: 15px;
+}
+
+.receipt-top h2 {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.receipt-top small {
+    color: #82776b;
+    text-align: right;
+    font-size: 10px;
+}
+
+.dates {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 1px dashed #e5ddd2;
+}
+
+.dates p {
+    font-size: 10px;
+    color: #82776b;
+}
+
+.dates h2 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: normal;
+    margin: 10px 0;
+}
+
+.dates small {
+    font-size: 11px;
+    color: #82776b;
+}
+
+
+.receipt-items {
+    padding: 10px 0;
+}
+
+.receipt-items p {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    font-size: 12px;
+    margin: 15px 0;
+}
+
+.receipt-items p span:last-child {
+    white-space: nowrap;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    border-top: 1px solid #82776b;
+    padding-top: 15px;
+}
+
+.total span {
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.total strong {
+    font-family: Georgia, serif;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+.receipt-footer {
+    color: #82776b;
+    font-size: 10px;
+    margin-top: 20px;
+}
+
+.welcome-card {
+    background-color: #a43e20;
+    color: #fff1ce;
+    width: 50%;
+    padding: 25px;
+    border-radius: 15px;
+    min-height: 410px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.welcome-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.card-sun {
+    font-size: 35px;
+    color: #f5d77d;
+}
+
+.welcome-message {
+    margin: 20px 0;
+}
+
+.welcome-message p:first-child {
+    font-family: Georgia, serif;
+    font-size: 17px;
+}
+
+.welcome-message h2 {
+    font-family: Georgia, serif;
+    font-size: 38px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.welcome-message p:last-child {
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.room-name small {
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.room-name h3 {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    font-weight: normal;
+}
+
+
+.hover-hint {
+    text-align: center;
+    color: #a84b30;
+    font-size: 10px;
+    letter-spacing: 1px;
+    margin: 25px 0 45px;
+}
+
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.info-card {
+    background-color: #fffdfa;
+    border: 1px solid #e5ddd2;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+
+.card-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+
+.arrival-icon {
+    background-color: #b84322;
+}
+
+.wifi-icon {
+    background-color: #596cc5;
+}
+
+.breakfast-icon {
+    background-color: #b94772;
+}
+
+.category {
+    font-size: 10px;
+    letter-spacing: 2px;
+}
+
+.number {
+    margin-left: auto;
+    font-family: Georgia, serif;
+    font-size: 25px;
+}
+
+.info-card:nth-child(1) .category,
+.info-card:nth-child(1) .number {
+    color: #a9472a;
+}
+
+.info-card:nth-child(2) .category,
+.info-card:nth-child(2) .number {
+    color: #596cc5;
+}
+
+.info-card:nth-child(3) .category,
+.info-card:nth-child(3) .number {
+    color: #b94772;
+}
+
+
+.info-card h2 {
+    font-family: Georgia, serif;
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.subheading {
+    font-size: 12px;
+    color: #82776b;
+    margin-bottom: 18px;
+}
+
+.description {
+    font-size: 13px;
+    color: #5e554c;
+    line-height: 1.7;
+}
+
+
+.wifi-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    background-color: #f3efea;
+    padding: 10px;
+    border-radius: 7px;
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+.wifi-row button {
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    
+}
+
